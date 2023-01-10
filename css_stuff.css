@@ -1,0 +1,991 @@
+
+:root {
+	
+	/*	COLOR VARS	*/
+	--darkest: #141020;
+	--darker: #101223;
+	--dark: #282a3a;
+	--fire-1: #f8b195;
+	--fire-2: #f67280;
+	--fire-3: #c06c84;
+	--fire-4: #6c567b;
+	--green-1: #d6f8b8;
+	--green-2: #acdeaa;
+	--green-3: #8fbbaf;
+	--green-4: #6b7b8e;
+
+	--text-1: #f2f2d0;
+
+
+	--yellow-1: #f0f090;
+	/* FONT VARS */
+
+
+}
+
+/*			*/
+/*	STYLES	*/
+/*	 		*/
+
+.main-body {
+	
+	padding-bottom: 60px;
+	font-family: 'Aldrich',sans-serif;
+	/*background-color: var(--darker); */
+  background-image: url("bg4_2.jpg");
+  background-size: 100%;
+}
+
+.main-grid {
+	
+  padding-top: 0px;
+	display: grid;
+	grid-template-columns: 1fr  4fr 1fr;
+
+}
+
+.header-grid {
+	
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	margin-bottom: 36px;
+	margin-top: 0px ;
+}
+
+.header-text {
+	text-align: center;
+	font-size: 96px; 	
+	padding: 0px;
+	margin-bottom: 2px;
+	text-decoration: underline;
+	text-underline-offset: 18px;
+	text-decoration-thickness: 3px;
+	/*font-family: 'Varela Round', sans-serif; */
+	/*font-family: 'VT323', monospace;*/
+	font-family: 'Aldrich', sans-serif;
+	color: var(--fire-1);
+	text-shadow: -1px 1px 0px var(--fire-2) ;
+}
+.header-brackets {
+	
+	font-size: 142px;
+	padding: 0px;
+	margin-top: 64px;
+	font-family: 'Aldrich', sans-serif;
+	color: var(--fire-3);
+	text-shadow: -1px 1px 0px var(--fire-4);
+}
+
+.subheader-text {
+	margin-top: 2px;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Aldrich' , monospace;
+	color: var(--fire-2);
+	text-shadow: -0.5px 0.5px 0px var(--fire-3);
+}
+
+.main-block {
+	text-align: center;
+	background-color: var(--darkest);
+	border-style: solid;
+	border-radius: 1px;
+	border-color: var(--fire-2);
+	border-width: 1px;
+	box-shadow: /*-8px 8px 0px var(--fire-2), -7px 7px 0px var(--fire-2), -6px 6px 0px var(--fire-2), -5px 5px 0px var(--fire-2)*/ -4px 4px 0px var(--fire-2), -3px 3px 0px var(--fire-2), -2px 2px 0px var(--fire-2), -1px 1px 0px var(--fire-2) , -4px 8px 0px var(--fire-2), 0px 8px 0px var(--fire-2);
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.top-bar-div {
+	margin-top: 24px;
+	margin-left: 16px; 
+	margin-right: 16px;
+
+	height: 32px;
+
+	display: grid;
+	grid-template-columns: 32px 1fr;
+	transition: color, border-color, background-color;
+	transition-duration: 0.6s;
+}
+
+
+
+
+.top-bar {
+	background-color: var(--dark);
+	color: var(--text-1);
+	border-color: var(--fire-1);
+	border-width: 2px;
+	border-style: solid;
+
+	font-family: 'Aldrich',monospace;
+	transition: background-color, border-color,color;
+	transition-duration: 0.6s;
+}
+
+.top-bar-div:hover .fa-magnifying-glass{
+	color: var(--green-1);
+	border-color: var(--fire-4);
+	background-color: var(--green-4);
+
+}
+
+.top-bar:hover {
+	border-color: var(--green-1);
+	background-color: var(--green-1);
+	color: var(--darkest);
+}
+
+.fa-magnifying-glass {
+	transition: background-color;
+	transition-duration: 0.6s;
+	padding-top: 8px;
+	background-color: var(--fire-1);
+}
+.fa-magnifying-glass:hover  {
+	background-color: var(--green-1);
+}
+
+.fire-header {
+	font-family: 'Aldrich',sans-serif;
+	text-align: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	font-size: 24px;
+	color: var(--fire-1);
+}
+
+.paragraph-n {
+	font-family: 'Varela Round',sans-serif;
+	text-align: left;
+	padding-left: 16px;
+	font-size: 16px;
+	color: var(--text-1);
+}
+.paragraph-sym {
+	font-family: 'Varela Round',sans-serif;
+	text-align: left;
+	padding-left: 0px;
+	font-size: 16px;
+	color: var(--text-1);
+}
+.paragraph {
+	font-family: 'Varela Round',sans-serif;
+	text-align: left;
+	padding-left: 16px;
+	font-size: 16px;
+	color: var(--text-1);
+}
+
+.slider-1 {
+
+	appearance: none;
+	color: var(--text-1);
+	background-color: var(--dark);
+	height: 18px;
+	border-radius: 4px;
+	border-color: var(--fire-1);
+	border-width: 2px;
+	border-style: solid;
+	width: 70%;
+	max-width: 650px;
+	transition: background-color, border-color;
+	transition-duration: 0.6s;
+}
+
+.slider-2 {
+
+	appearance: none;
+	color: var(--text-1);
+	background-color: var(--green-4);
+	height: 4px;
+	border-radius: 3px;
+	border-color: var(--green-3);
+	border-width: 2px;
+	border-style: solid;
+	width: 70%;
+	max-width: 650px;
+	transition: background-color, border-color;
+	transition-duration: 0.6s;
+}
+
+.slider-3 {
+
+	appearance: none;
+	color: var(--text-1);
+	background-image: url("slider_before.png");
+	height: 30px;
+	border-radius: 10px;
+	border-color: var(--text-2);
+	border-width: 2px;
+	border-style: solid;
+	width: 70%;
+	max-width: 650px;
+	transition: background-color, border-color, background-image;
+	transition-duration: 0.6s;
+}
+
+.slider-1:hover {
+	border-color: var(--green-1);
+	background-color: var(--dark);
+}
+
+.slider-2:hover {
+	border-color: var(--green-1);
+	background-color: var(--dark);
+}
+
+.slider-3:hover {
+	border-color: var(--fire-3);
+	background-color: var(--dark);
+	background-image: url("slider.png");
+}
+
+.slider-1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 8px;
+  background: var(--fire-3);
+  cursor: pointer;
+  box-shadow: 1px 1px 0px var(--fire-1);
+}
+.slider-2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid var(--darkest);
+  height: 20px;
+  width: 10px;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+  box-shadow: -1px 3px 1px var(--darkest); /* Add cool effects to your sliders! */
+}
+
+.slider-3::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  
+  border: 2px solid var(--darkest);
+  height: 28px;
+  width: 10px;
+  border-radius: 3px;
+ background-color: var(--darker);
+ background-image: revert-layer;
+  cursor: pointer;
+  
+}
+
+.slider-box {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.checkbox-1-lable {
+	font-size: 18px;
+	color: var(--green-1);
+	padding-top: 16px;
+	height: 25px;
+	display: inline-block;
+	
+}
+
+.checkbox {
+	margin-top: 10px;
+	content: '';
+	appearance: none;
+	height: 25px;
+	width: 25px;
+	background-color: var(--dark);
+	border-color: var(--fire-1);
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 4px;
+	transition: background-color, border-color, content;
+	transition-duration: 0.6s;
+}
+
+.checkbox:hover {
+	background-color: var(--green-4);
+	border-color: var(--green-1);
+}
+
+.checkbox:checked {
+	background-color: var(--green-4);
+	border-color: var(--green-1);
+	color: var(--dark);
+	
+	font-size: 16px;
+	text-align: center;
+}
+
+
+.checkbox:checked:after {
+	content: '✓';
+	color: white;
+	text-align: center;
+}
+
+
+
+.checkbox_1_container {
+	position: relative;
+}
+
+.checkbox_1 {
+	content: ' ';
+	margin-top: 10px;
+	appearance: none;
+	height: 25px;
+	width: 50px;
+	background-color: var(--dark);
+	border-color: var(--fire-1);
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 10px;
+	transition: background-color, border-color;
+	transition-duration: 0.6s;
+
+}
+
+.checkbox_1_switch {
+	top: 12px;
+	left: 6px;
+	position: absolute;
+	content: '';
+  appearance: none;	
+	width: 18px;
+	height: 18px;
+	border-radius: 18px;
+	border: 2px solid var(--fire-3);
+  background-color: var(--fire-3);
+  transition: left background-color border;
+  transition-duration: 0.6s;
+}
+
+/*		Use double checkboxes to make one button cause i dum	*/
+
+.checkbox_1:hover  {
+	background-color: var(--green-4);
+	border-color: var(--green-3);
+}
+
+/* TOGGLE */
+
+.checkbox_1:checked + .checkbox_1_switch {
+	background-color: var(--green-1);
+	border-color: var(--green-2);
+  left: 30px
+}
+
+.checkbox_1:hover + .checkbox_1_switch {
+
+	background-color: var(--dark);
+	border-color: var(--yellow);
+
+}
+
+.checkbox_1:checked {
+	background-color: var(--green-4);
+	border-color: var(--green-2)
+}
+
+.checkbox2 {
+	margin-top: 10px;
+
+	appearance: none;
+	height: 25px;
+	width: 25px;
+	background-color: var(--dark);
+	border-color: var(--fire-1);
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 20px;
+	transition: background-color, border-color;
+	transition-duration: 0.6s;
+}
+
+.checkbox2:hover {
+	background-color: var(--green-4);
+	border-color: var(--green-2);
+}
+
+.checkbox2:checked {
+	background-color: var(--green-2);
+	border-color: var(--green-1);
+	color: var(--dark);
+	
+	font-size: 18px;
+	text-align: center;
+}
+
+
+.checkbox2:checked:after {
+	text-align: center;
+	background-color: var(--green-2);
+	border-color: var(--green-1)
+}
+
+.button1 {
+	
+	font-family: 'Aldrich',sans-serif;
+	font-size: 16px;	
+	background-color: var(--dark);
+	width: 18em;
+	height: 2em;
+	color: var(--fire-1);
+	border-style: solid;
+	border-color: var(--fire-1);
+	border-width: 0.2em;
+	border-radius: 5px;
+	margin-bottom: 2em;
+	opacity: 0.8;
+
+	transition-duration: 0.6s;
+	transition: opacity color background-color border-color;
+
+}
+
+.button1:hover {
+	background-color: var(--green-4);
+	border-color: var(--green-2);
+	color: var(--green-2);
+	opacity: 1;
+}
+
+.button1:active {
+	background-color: var(--green-2);
+	border-color: var(--green-1);
+	color: var(--darker);
+	opacity: 1;
+}
+
+
+.button2 {
+	font-family: 'Aldrich',sans-serif;
+	font-size: 16px;	
+	background-color: var(--dark);
+	width: 18em;
+	height: 2em;
+	color: var(--fire-1);
+	border-style: solid;
+	border-color: var(--fire-1);
+	border-width: 0.2em;
+	border-radius: 5px;
+	margin-bottom: 2em;
+	opacity: 0.8;
+	transition-duration: 0.6s;
+	transition: width color background-color border-color opacity;
+
+}
+
+.button2:hover {
+	background-color: var(--darker);
+	border-color: var(--green-3);
+	color: var(--green-3);
+	opacity: 1;
+}
+
+.button2:active {
+	background-color: var(--dark);
+	border-color: var(--green-1);
+	color: var(--green-1);
+	width: 20em;
+	height: 1.9em;
+	opacity: 1;
+}
+
+
+.button3 {
+	font-family: 'Aldrich',sans-serif;
+	font-size: 16px;	
+	background-color: var(--dark);
+	width: 18em;
+	height: 2em;
+	color: var(--fire-1);
+	border-style: solid;
+	border-color: var(--fire-1);
+	border-width: 0.2em;
+	border-radius: 5px;
+	margin-bottom: 2em;
+
+	opacity: 0.8;
+
+	box-shadow: 0px 5px 0px 0px, 0px 4px 0px 0px , 0px 3px 0px 0px , 0px 2px 0px 0px , 0px 1px 0px 0px;
+
+	transition-duration: 0.6s;
+	transition: box-shadow color background-color border-color opacity;
+
+	
+
+
+
+}
+
+.button3:hover {
+	background-color: var(--dark);
+	border-color: var(--green-3);
+	color: var(--green-3);
+	opacity: 1;
+}
+
+.button3:active {
+	background-color: var(--darker);
+	border-color: var(--green-1);
+	color: var(--green-1);
+	opacity: 1;
+	box-shadow: inset 5px 5px 5px var(--dark), inset -5px -5px 5px var(--dark); 
+}
+
+.listing-header {
+	color: var(--fire-1);
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 6px;
+}
+
+.listing {
+	text-align: left;
+	color: var(--green-2);
+	font-size: 16px;
+
+	transition: color font-size transform;
+	transition-duration: 0.6s;
+}
+
+.listing::before {
+
+	content: '⚙️';
+ 	margin-right: 4px;
+ 	margin-left: 8px;
+}
+
+
+.list-border {
+	box-shadow: -4px 0px 0px var(--dark);
+	/*border-style: solid;
+	border-color: var(--dark);
+	border-width: 8px; */
+	border-radius: 12px;
+	padding-bottom: 4px;
+	padding-top: 2px;
+	margin-bottom: 24px;
+}
+
+.listing:hover {
+	color: var(--green-1);
+	font-size: 18px;
+	cursor: pointer;
+  transform: rotate(0.5deg);
+}
+
+
+
+
+
+
+.green-header {
+	color: var(--green-1);
+	text-shadow: 0px 1px 0px var(--green-2);
+}
+
+.listing1 {
+	text-align: left;
+	color: var(--green-2);
+	font-size: 20px;
+	text-align: right;
+	transition: color translate;
+	transition-duration: 0.6s;
+}
+
+.listing1::before {
+	float: right;
+	content: '🍵';	
+	margin-right: 20px;
+ 	margin-left: 8px;
+
+}
+
+.listing1:hover {
+	translate: -1em 0em;
+}
+
+.wtext {
+	color: white;
+}
+
+.image-div {
+	box-shadow: inset 0px 20px 10px var(--darkest), inset 0px -20px 10px var(--darkest), inset 20px 0px 10px var(--darkest), inset -20px 0px 10px var(--darkest);
+}
+
+.input_div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+  align-items: center;
+}
+
+.text_box {
+	margin-left: 2em;
+	align-items: center;
+	height: 16px;
+	width: 50%;
+	border: 2px solid var(--fire-1);
+	border-radius: 2px;
+	background-color: var(--dark);
+	box-shadow: -18px 0px 0px var(--fire-1), 18px 0px 0px var(--fire-1);
+	float: left;
+	font-family: 'Aldrich',sans-serif;
+}
+
+.h_label {
+  text-align: center;	
+	color: var(--yellow);
+}
+
+.radio-check {
+	vertical-align: middle;
+	align-items: center;
+	text-align: center;
+}
+
+.h_label::before {
+	content: ' ⟵ ';
+	font-size: 18px;
+	margin-right: 4px;
+}
+
+.classic_check {
+	color: var(--green-1);
+  appearance: none;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: var(--dark);
+  border: 2px solid var(--fire-1);
+  content: ' ';
+}
+
+.classic_check:hover {
+	background-color: var(--darker);
+	border: 2px solid var(--fire-3);
+}
+
+.classic_check:checked {
+	color: var(--green-1);
+  background-color: var(--green-4);
+  border-color: var(--green-1);
+  content: '■';
+}
+
+.radio {
+
+	appearance: none;
+	height: 1.5em;
+	width: 1.5em;
+	background-color: var(--dark);
+	border: 2px solid var(--fire-1);
+	border-radius: 12px;
+
+ transition-duration: .6s;
+ transition: border-color background-color border-width;
+}
+
+.radio:hover {
+	background-color: var(--darker);
+	border-color: var(--fire-3);
+}
+
+
+.radio:checked{
+	border: 2px solid var(--green-1);
+	background-color: var(--green-4);
+}
+
+.textdiv {
+	opacity: 1;
+	background-color: var(--fire-1);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; 
+  height: 4px;
+  transition: opacity height background-color;
+  transition-duration: .6s;
+  overflow: auto;
+  
+}
+.downdiv {
+	background-color: var(--fire-1);
+	color: white;
+	appearance: none;
+  width: 80%;
+  height: 40px;
+  position: relative;
+}
+
+
+.hidediv {
+  opacity: 1;
+  margin: 10px;
+}
+
+
+
+.downdiv::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	vertical-align: middle;
+	text-align: center;
+	content: 'HTML inputs .-.';
+}
+
+.downdiv.title1 { 
+
+}
+
+.downdiv:checked {
+	background-color: var(--green-3);
+}
+
+.downdiv:checked + .textdiv {
+ background-color: var(--dark);
+ height: 30em;
+ width: 100%;
+ border-radius: 40px;
+ border: 3px solid var(--green-3);
+}
+.downdiv:checked + .hidediv {
+  opacity: 0;
+  color: red;
+}
+
+
+/* I didnt come up with better idea rather then just copy everything lmao*/
+
+
+.textdiv_p {
+	opacity: 1;
+	background-color: var(--fire-1);
+  margin-left: auto;
+  margin-right: auto;
+ 	width: 80%;
+  height: 4px;
+  transition: opacity height background-color;
+  transition-duration: .6s;
+  overflow: auto;
+}
+.downdiv_p  {
+	background-color: var(--fire-1);
+	color: white;
+	appearance: none;
+  width: 80%;
+  height: 40px;
+  position: relative;
+}
+
+
+.hidediv_p  {
+  opacity: 1;
+  margin: 10px;
+}
+
+
+
+.downdiv_p::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 28px;
+	vertical-align: middle;
+	text-align: center;
+	content: 'Some fancy s?';
+}
+
+.downdiv_p .title1 { 
+
+}
+
+.downdiv_p:checked {
+	background-color: var(--darker);
+	border: 3px solid var(--fire-2);
+	color: var(--fire-2);
+}
+
+.downdiv_p:checked + .textdiv_p  {
+ background-color: var(--darker);
+ height: 30em;
+ width: 100%;
+ border-radius: 40px;
+ border: 3px solid var(--fire-2);
+}
+.downdiv_p:checked + .hidediv_p  {
+  opacity: 0;
+  color: red;
+}
+
+a {
+	text-decoration: none;
+	color: var(--fire-3);
+	transition: color text-decoration;
+	transition-duration: .6s;
+}
+
+a:hover {
+  color: var(--fire-1);
+}
+
+
+.listing a {
+	color: var(--green-2);
+}
+
+.butt_stick {
+
+	position: relative;
+
+}
+
+.butt {
+	width: 80px;
+	height: 20px;
+	background-color: var(--dark);
+	border: 2px solid var(--fire-1);
+  border-radius: 4px;
+  transition-duration: .6s;
+  transition: background-color border-color;
+}
+
+.butt:hover {
+  background-color: var(--fire-4);
+  border-color: var(--yellow-1);
+}
+
+.butt:active {
+	background-color: var(--green-4);
+	border-color: var(--green-1);
+}
+
+/* THIS supposed to be a style(s) for color selection and files */
+/* However its to detious to style, so i dont really want to do this here*/
+
+.color {
+
+}
+
+/* MOVE ON >:( */
+
+.align-center {
+  padding-left: 20%;
+}
+
+/**/ 
+/**/ 
+/**/ 
+/* TOP BAR!!!*/
+/**/ 
+/**/ 
+/**/
+
+.TOPBAR {
+	position: sticky;
+	display: grid;
+	grid-template-columns: 126px 1fr 1fr 1fr 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background-color: var(--darkest);
+  border-bottom: 1px solid var(--fire-1);
+  z-index: 2;
+  align-items: center;
+  padding-right: 48px;
+}
+
+.bar_head {
+	display: grid;
+
+	grid-template-columns: 1fr 6fr 1fr;
+	background-color: var(--dark);
+	height: 44px;
+	border-radius: 22px;
+  
+}
+
+.bar_head_image {
+  height: 60px;
+  opacity: 1;
+  margin-top: -10px
+}
+
+.author_div {
+  text-align: center;
+  padding-top: 5px;
+  padding-left: 4px;
+	background-color: var(--dark);
+	height: 40px;
+	margin-left: 20px;
+	border-radius: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  padding-right: 4px;
+}
+
+.author {
+	width: 32px;
+	height: 32px;
+	border-radius: 20px;
+	border: 2px solid var(--green-1);
+}
+
+.auth_label {
+  margin-top: 9px;
+  margin-left: -2px;
+  color: var(--green-1);
+}
+
+.contact {
+  background-color: var(--dark);
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  align-items: center;
+  height: 36px;
+  width: 120px;
+  padding-right: 4px;
+  padding-left: 12px;
+  border-radius: 30px;
+  padding-top: 6px;
+
+}
+
+.fa-discord {
+  color: var(--fire-3);
+  transition-duration: 0.6s;
+  transition: color 0.6s;
+}
+
+.fa-youtube {
+  color: var(--fire-2);
+  transition: color 0.6s;
+}
+
+.fa-github {
+	color: var(--green-4);
+  transition: color 0.6s;
+}
+
+
+
+.fa-discord:hover {
+	color: var(--fire-2);
+}
+.fa-youtube:hover {
+  color: var(--fire-1);
+}
+.fa-github:hover {
+	color: var(--green-1);
+}
+
